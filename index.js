@@ -52,6 +52,6 @@ app.get("/api/v1/users", async (req, res) => {
     }
 })
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log("server running on port 8000");
 })
