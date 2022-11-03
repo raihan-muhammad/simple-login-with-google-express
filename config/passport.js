@@ -3,8 +3,8 @@ const { Strategy } = require("passport-google-oauth2");
 
 passport.use(new Strategy(
     {
-        clientID: process.env.PASSPORT_CLIENT_ID,
-        clientSecret: process.env.PASSPORT_CLIENT_SECRET,
+        clientID: "278050253103-dav3lkghksgat1njmn64aoldbqvkm3b4.apps.googleusercontent.com",
+        clientSecret: "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",
         callbackURL: "http://localhost:8000/api/v1/auth/google",
         passReqToCallback: true
     },
